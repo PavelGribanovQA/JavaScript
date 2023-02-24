@@ -68,19 +68,29 @@ console.log(checkAge('15'))
 // Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
 
 
-const checkAge = function(age) {
+<html>
+   <head>
+   </head>
+   <body>
+      <script>
+
+    const checkAge = function() {
+    let age = prompt("Введите ваш возраст")
     let age_2 = 18;
     let age_3 = 60;
     
     if (isNaN(Number(age))){
-        return "Error: type of data is not 'number'"
+        alert("Error: type of data is not 'number'")
     } else if (+age < age_2) {
-        return "You don't have access cause your age is " + age + " It's less then"
+        alert("You don't have access cause your age is " + age + " It's less then")
     } else if (+age >= age_2 && age < age_3) {
-        return("Welcome  !")
+        alert("Welcome  !")
     } else if (+age > age_3) {
-        return "Keep calm and look Culture channel"
+        alert("Keep calm and look Culture channel")
     } else {
-        return "Technical work"};
+        alert("Technical work")};
 };
-console.log(checkAge('15'))
+checkAge()
+	  </script>
+   </body>
+</html>
